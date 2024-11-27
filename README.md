@@ -10,5 +10,5 @@ php -S php -S localhost:8000
 
 ### Option 2 - Nginx
 ```bash
-nginx
+nginx -c nginx.conf -p $(pwd) -g "daemon off;"
 ```
