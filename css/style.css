@@ -12,6 +12,34 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
+
+/* Headings */
+/* --- Headings --- */
+
+h1, h2, h3 {
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin: 0 0 15px 0;
+}
+
+/* Nav */
 .main-nav {
   float: top;
   list-style: none;
