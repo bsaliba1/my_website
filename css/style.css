@@ -39,13 +39,28 @@ h3 {
   margin: 0 0 15px 0;
 }
 
+.logo {
+  height: 50px;
+  width: auto;
+  float: left;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #333;
   padding: 10px 0;
+}
+
+.navbar .nav-logo {
+  margin-right: 20px;
+}
+.navbar .nav-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
 }
 
 /* Navbar Navigation Links */
@@ -59,7 +74,7 @@ h3 {
 }
 
 /* Navbar Hover Effect */
-.navbar a:hover {
+.navbar .nav-links a:hover {
   background-color: #575757;
   border-radius: 5px;
 }
