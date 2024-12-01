@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dev with a Dream</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="icon" type="image/png+xml" href="../assets/cartoon-clouds.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <iframe
+      src="/header-nav.html"
+      style="width: 100%; border: none; height: 90px"
+      title="Header Navigation"
+    >
+    </iframe>
+    <section>
+      <h1 class="page-title">Book Reviews</h1>
+      <p class="page-description">
+        Below you will find an archive of book reviews with my thoughts and
+        opinions on the books. I read a mixture of non-fiction and fiction with
+        a particular love for weird horror fiction. Some of my favorite authors
+        include George Saunders, Cormac McCarthy, and H.P Lovecraft.
+      </p>
+      <div class="article-grid">
+        <p>article 1</p>
+        <p>article 2</p>
+        <p>article 3</p>
+        <p>article 4</p>
+        <p>article 5</p>
+      </div>
+    </section>
+  </body>
+  <style>
+    .article-grid {
+      display: grid; /* Activate grid layout */
+      grid-template-columns: 1fr 1fr 1fr; /* Create 3 equal-width columns */
+      gap: 16px; /* Add space between grid items */
+      padding: 16px; /* Add padding around the grid */
+      margin-top: 20px;
+    }
+
+    .article-grid p {
+      padding: 8px; /* Add some padding inside each article */
+      text-align: center; /* Center text */
+    }
+  </style>
+</html>

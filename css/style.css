@@ -45,3 +45,16 @@ h3 {
   width: auto;
   float: left;
 }
+
+.page-title {
+  width: 70%;
+  margin: 50px 15% 30px 15%;
+  text-align: center;
+}
+
+.page-description {
+  line-height: 145%;
+  width: 70%;
+  margin: 0 15%;
+  text-align: center;
+}
