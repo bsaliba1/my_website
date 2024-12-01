@@ -18,12 +18,49 @@
     >
     </iframe>
     <section>
-      <h1 class="page-title">Tech Blog</h1>
+      <h1 class="page-title">Training Blog</h1>
       <p class="page-description">
-        Below you will find an archive of blog posts ranging from technical
-        problems, to team building concepts, or random shower thoughts that I
-        had about engineering.
+        Below you'll find my training schedule and an archive of blog posts about all things endurance sports.
       </p>
+      <h2 class="page-title">Training Schedule</h2>
+      <div class="training-schedule-grid">
+        <div>
+          <p><strong>Monday</strong></p>
+          <p>Run</p>
+          <p>Weights</p>
+        </div>
+        <div>
+          <p><strong>Tuesday</strong></p>
+          <p>Bike</p>
+          <p>-</p>
+        </div>
+        <div>
+          <p><strong>Wednesday</strong></p>
+          <p>Weights</p>
+          <p>Swim</p>
+        </div>
+        <div>
+          <p><strong>Thursday</strong></p>
+          <p>Bike</p>
+          <p>-</p>
+        </div>
+        <div>
+          <p><strong>Friday</strong></p>
+          <p>Weights</p>
+          <p>Swim</p>
+        </div>
+        <div>
+          <p><strong>Saturday</strong></p>
+          <p>Long Run</p>
+          <p>-</p>
+        </div>
+        <div>
+          <p><strong>Sunday</strong></p>
+          <p>-</p>
+          <p>-</p>
+        </div>
+      </div>
+      <h2 class="page-title">Blog Posts</h2>
       <div class="article-grid">
         <p>article 1</p>
         <p>article 2</p>
@@ -45,6 +82,19 @@
     .article-grid p {
       padding: 8px; /* Add some padding inside each article */
       text-align: center; /* Center text */
+    }
+
+    .training-schedule-grid {
+      display: grid; /* Activate grid layout */
+      grid-template-columns: repeat(7, 1fr); /* Create 3 equal-width columns */
+      margin: 20px 20px;
+      border: 0.5px solid black;
+    }
+
+    .training-schedule-grid p {
+      padding: 8px; /* Add some padding inside each article */
+      text-align: center; /* Center text */
+      border: 0.5px solid black;
     }
   </style>
 </html>
