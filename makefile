@@ -9,3 +9,20 @@ help: ## Display all available make commands
 .PHONY: start
 start: ## Run webserver
 	nginx -c nginx.conf -p $(shell pwd) -g "daemon off;"
+
+.PHONY: np new-post
+new-post: ## Create new HTML post file
+	@scripts/new_post.zsh $(filter-out $@,$(MAKECMDGOALS))
+
+np:
+	@$(MAKE) new-post $(filter-out $@,$(MAKECMDGOALS))
+
+# Suppress warnings
+%:
+	@:
+
+# Notes
+# -----
+# $@ - the current target name
+# MAKECMDGOALS - the list of targets
+# @ - at the beginning of a line it surpresses the command output
