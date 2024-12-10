@@ -18,11 +18,14 @@
     >
     </iframe>
     <section>
-      <h1 class="page-title">Training Blog</h1>
-      <p class="page-description">
-        Below you'll find my training schedule and an archive of blog posts about all things endurance sports.
+      <h1 class="title">Training Blog</h1>
+      <p class="description">
+        Below you'll find my training schedule and an archive of blog posts
+        about all things endurance sports.
       </p>
-      <h2 class="page-title">Training Schedule</h2>
+    </section>
+    <section>
+      <h2 class="title">Schedule</h2>
       <div class="training-schedule-grid">
         <div>
           <p><strong>Monday</strong></p>
@@ -60,13 +63,23 @@
           <p>-</p>
         </div>
       </div>
-      <h2 class="page-title">Blog Posts</h2>
+      <h2 class="title">Blog Posts</h2>
       <div class="article-grid">
-        <p>article 1</p>
-        <p>article 2</p>
-        <p>article 3</p>
-        <p>article 4</p>
-        <p>article 5</p>
+        <p>Placeholder 1</p>
+        <p>Placeholder 2</p>
+        <p>Placeholder 3</p>
+        <p>Placeholder 4</p>
+        <p>Placeholder 5</p>
+      </div>
+    </section>
+    <section>
+      <h2 class="title">Photos</h2>
+      <div class="photo-grid">
+        <img
+          src="../assets/nyc-marathon-finish.jpg"
+          alt="NYC Marathon 2024 Finish"
+        />
+        <img src="../assets/rock-climbing.jpg" alt="Rock climbing March 2024" />
       </div>
     </section>
   </body>
@@ -82,6 +95,22 @@
     .article-grid p {
       padding: 8px; /* Add some padding inside each article */
       text-align: center; /* Center text */
+    }
+
+    .photo-grid {
+      display: grid; /* Activate grid layout */
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Create 5 equal-width columns */
+      gap: 16px; /* Add space between grid items */
+      padding: 16px; /* Add padding around the grid */
+      margin-top: 20px;
+    }
+
+    .photo-grid img {
+      padding: 8px; /* Add some padding between photos */
+      width: 100%; /* Make images fill their grid cell */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 8px; /* Optional: rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
     }
 
     .training-schedule-grid {
