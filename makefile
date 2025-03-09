@@ -11,7 +11,7 @@ start: ## Run webserver
 	nginx -c nginx.conf -p $(shell pwd) -g "daemon off;"
 
 .PHONY: np new-post
-new-post: ## Create new HTML post file
+new-post: ## Create new HTML post file (options: 'books', 'training', 'tech')
 	@scripts/new_post.zsh $(filter-out $@,$(MAKECMDGOALS))
 
 np:
